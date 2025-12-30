@@ -1,0 +1,23 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "src/user/user.spec.ts": true,
+        "src/user/user.controller.spec.ts": true,
+        "src/user/user.service.spec.ts": true,
+        "src/app.controller.spec.ts": true,
+        "src/product/product.controller.spec.ts": true,
+        "src/product/product.service.spec.ts": true
+    },
+    "hide-files.files": [
+        "src/user/user.spec.ts",
+        "src/user/user.controller.spec.ts",
+        "src/user/user.service.spec.ts",
+        "src/app.controller.spec.ts",
+        "src/product/product.controller.spec.ts",
+        "src/product/product.service.spec.ts"
+    ]
+}
