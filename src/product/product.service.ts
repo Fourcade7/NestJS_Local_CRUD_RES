@@ -42,7 +42,12 @@ export class ProductService {
   }
 
   remove(id: number) {
-    return `This action removes a #${id} product`;
+    const user=this.users.find(u => u.id===id);
+    if(!user){
+      throw new NotFoundException("User not found");
+    }
+    this.users=this.users.filter(u => u.id !==id);
+    return {message:"User deleted"};
   }
 }
 
